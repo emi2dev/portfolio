@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Emilio Martín Torres - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Barra superior tipo consola -->
+    <header class="topbar">
+        <div class="logo">emilio@portfolio:~$</div>
+        <nav class="nav-links">
+            <a href="#about">Sobre mí</a>
+            <a href="#experience">Experiencia</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO: panel de sistema + foto -->
+        <section class="hero">
+            <div class="hero-grid">
+                <!-- Panel tipo dashboard -->
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="window-title">~/system_status.sh</div>
+                    </div>
+                    <div class="terminal-body">
+                        <p class="line comment"># Bienvenido a mi sistema</p>
+                        <p class="line">
+                            <span class="prompt">emilio@portfolio:~$</span>
+                            <span id="typewriter"></span><span class="cursor"></span>
+                        </p>
+
+                        <div class="hero-info">
+                            <div class="hero-name">
+                                <h1>Emilio Martín Torres</h1>
+                                <p class="role">Técnico de soporte y sistemas · Admin de servidores</p>
+                                <p class="location">Torrelodones, Madrid · España</p>
+                            </div>
+
+                            <div class="status-grid">
+                                <div class="status-card">
+                                    <span class="status-label">Linux</span>
+                                    <span class="status-badge online">ONLINE</span>
+                                    <span class="status-meta">Ubuntu · Debian · CentOS</span>
+                                </div>
+                                <div class="status-card">
+                                    <span class="status-label">Windows Server</span>
+                                    <span class="status-badge online">ONLINE</span>
+                                    <span class="status-meta">AD · roles básicos</span>
+                                </div>
+                                <div class="status-card">
+                                    <span class="status-label">Hosting & Redes</span>
+                                    <span class="status-badge online">MONITORING</span>
+                                    <span class="status-meta">Plesk · cPanel · VPN · VOIP</span>
+                                </div>
+                                <div class="status-card">
+                                    <span class="status-label">Scripting</span>
+                                    <span class="status-badge in-progress">IN PROGRESS </span>
+                                    <span class="status-meta">bash · automatización</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hero-buttons">
+                            <!-- CV - usa tu PDF real -->
+                            <a href="assets/CV-EMILIO-MARTIN-TORRES.pdf" target="_blank" class="btn btn-cv">
+                                Ver CV (PDF)
+                            </a>
+                            <!-- LinkedIn - CAMBIA la URL por la tuya -->
+                            <a href="https://www.linkedin.com/in/emiliomartíntorres" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-linkedin">
+                                LinkedIn
+                            </a>
+                        </div>
+
+                        <!-- Mini panel de métricas falsas (solo visual) -->
+                        <div class="metrics">
+                            <div class="metric">
+                                <span class="metric-label">ACTIVE SERVERS</span>
+                                <span class="metric-value" data-target="1">0</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">TICKETS RESUELTOS</span>
+                                <span class="metric-value" data-target="853">0</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">PING LATENCIA</span>
+                                <span class="metric-value" data-target="32">0</span><span class="metric-sub">ms</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel con tu foto -->
+                <aside class="profile-card">
+                    <!-- Pon aquí tu imagen (renómbrala a perfil.jpg o cambia el src) -->
+                    <div class="avatar-wrapper">
+                        <img src="img/perfil.jpg" alt="Foto de Emilio Martín Torres" class="avatar">
+                    </div>
+                    <div class="profile-text">
+                        <p>
+                            Apasionado por la tecnología y la innovación. Me gusta montar
+                            y administrar servidores, optimizar sistemas y aprender cosas
+                            nuevas todo el tiempo.
+                        </p>
+                        <p class="small">
+                            Actualmente cursando ASIR y creciendo como profesional IT
+                            en entornos Linux y Windows, redes y servicios en Internet.
+                        </p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- SOBRE MÍ -->
+        <section id="about" class="section">
+            <h2 class="section-title">// Sobre mí</h2>
+            <div class="card terminal-card">
+                <p>
+                    Soy <strong>Emilio Martín Torres</strong>, técnico de soporte y sistemas con experiencia
+                    en entornos de hosting, redes y administración de servidores, tanto en Linux como en
+                    Windows Server.
+                </p>
+                <p>
+                    Me defino como una persona <strong>autodidacta, curiosa y proactiva</strong>, siempre
+                    buscando mejorar los procesos, automatizar tareas y entender cómo funciona todo “por dentro”.
+                </p>
+                <p>
+                    He trabajado dando soporte remoto y presencial, montando equipos y servidores,
+                    gestionando paneles de hosting (Plesk, cPanel) y monitorización con PRTG.
+                </p>
+            </div>
+        </section>
+
+        <!-- EXPERIENCIA -->
+        <section id="experience" class="section">
+            <h2 class="section-title">// Experiencia</h2>
+            <div class="grid-2">
+                <article class="card terminal-card">
+                    <h3>Aclass Internet y Comunicaciones SL</h3>
+                    <p class="exp-role">Técnico de soporte y sistemas</p>
+                    <p class="exp-time">Abril 2024 - Julio 2024 · Madrid</p>
+                    <ul class="list">
+                        <li>Soporte técnico telefónico y remoto a clientes.</li>
+                        <li>Montaje y mantenimiento de equipos y servidores.</li>
+                        <li>Monitorización con PRTG de infraestructuras.</li>
+                        <li>Gestión de hosting con Plesk y cPanel.</li>
+                        <li>Redes, VOIP y VPN para clientes.</li>
+                    </ul>
+                </article>
+
+                <article class="card terminal-card">
+                    <h3>Chef-Market</h3>
+                    <p class="exp-role">Becario de TI</p>
+                    <p class="exp-time">Marzo 2025 · Las Rozas de Madrid</p>
+                    <ul class="list">
+                        <li>Uso de SAP Business One (SAP B1).</li>
+                        <li>Informes con SAP Crystal Reports.</li>
+                        <li>Gestión de datos en MySQL Server.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section">
+            <h2 class="section-title">// Skills</h2>
+            <div class="grid-3">
+                <div class="card terminal-card">
+                    <h3>🖥️ Sistemas</h3>
+                    <ul class="list">
+                        <li>Linux (Ubuntu, Debian, CentOS)</li>
+                        <li>Windows Server (roles básicos, AD)</li>
+                        <li>Administración de servicios (SSH, HTTP/HTTPS, DNS, DHCP)</li>
+                        <li>Montaje y mantenimiento de hardware</li>
+                    </ul>
+                </div>
+
+                <div class="card terminal-card">
+                    <h3>🌐 Redes & Hosting</h3>
+                    <ul class="list">
+                        <li>Redes TCP/IP, VPN, VOIP</li>
+                        <li>Paneles de hosting: Plesk, cPanel</li>
+                        <li>Servicios en Internet (hosting, dominios)</li>
+                        <li>Monitorización con PRTG</li>
+                    </ul>
+                </div>
+
+                <div class="card terminal-card">
+                    <h3>⚙️ Herramientas & Soft Skills</h3>
+                    <ul class="list">
+                        <li>MySQL · SAP Business One · Crystal Reports</li>
+                        <li>Scripting en bash, automatización básica</li>
+                        <li>Trabajo en equipo y comunicación técnica</li>
+                        <li>Alta capacidad autodidacta</li>
+                    </ul>
+                </div>
+
+                <!-- NUEVO BLOQUE DE CIBERSEGURIDAD -->
+                <div class="card terminal-card">
+                    <h3>🔒 Ciberseguridad</h3>
+                    <ul class="list">
+                        <li>Hardening básico de servidores Linux y Windows</li>
+                        <li>Uso de herramientas como Nmap y Wireshark</li>
+                        <li>Gestión de usuarios, permisos y accesos remotos seguros</li>
+                        <li>Buenas prácticas de seguridad en redes y sistemas</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- PROYECTOS -->
+        <section id="projects" class="section">
+            <h2 class="section-title">// Proyectos</h2>
+            <div class="projects-grid">
+
+                <article class="card terminal-card project-card">
+                    <div class="project-header">
+                        <h3>Servidores FiveM & Scripting</h3>
+                        <span class="project-status status-finished">Complete</span>
+                    </div>
+                    <p>
+                        Diseño y programación de entornos de juego en FiveM. Desarrollo de mecánicas propias mediante
+                        scripts,
+                        mantenimiento del servidor y gestión del rendimiento para usuarios activos.
+                    </p>
+                    <p class="tagline">Linux · Windows · MySQL · LUA · HTML · CSS</p>
+                </article>
+
+                <article class="card terminal-card project-card">
+                    <div class="project-header">
+                        <h3>Creacion de pagina web</h3>
+                        <span class="project-status status-progress">In progress</span>
+                    </div>
+                    <p>
+                        Creacion de una pagina web para subir scripts de FiveM y busqueda de ellos, ademas de un foro
+                        para la comunidad.
+                        Todo ello usando Invision Power Board (IPB) y alojado en un servidor propio.
+                    </p>
+                    <p class="tagline">Linux · IPB · HTML · CSS</p>
+                </article>
+
+                <article class="card terminal-card project-card">
+                    <div class="project-header">
+                        <h3>Servicio de virtualizacion con aceso web</h3>
+                        <span class="project-status status-stopped">Paused</span>
+                    </div>
+                    <p>
+                        Desarrollo de un servicio de virtualización basado en Proxmox VE, permitiendo a los usuarios
+                        crear y gestionar máquinas virtuales
+                        a través de una interfaz web personalizada. Implementación de web de administración y
+                        facturación mediante WHMCS.
+                    </p>
+                    <p class="tagline">Proxmox VE · Linux · WHMCS</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contact" class="section">
+            <h2 class="section-title">// Contacto</h2>
+            <div class="card terminal-card contact-card encrypted" id="contact-card">
+                <div class="decrypt-overlay">
+                    <span class="decrypt-msg">[ SYSTEM LOCKED :: CLICK TO DECRYPT ]</span>
+                </div>
+                <div class="contact-content">
+                    <p class="line comment"># ¿Hablamos?</p>
+                    <p class="line">
+                        <span class="key">email</span>=<span class="value" id="contact-email">"..."</span>
+                    </p>
+                    <p class="line">
+                        <span class="key">ubicacion</span>=<span class="value">"Torrelodones, Madrid"</span>
+                    </p>
+                    <p class="line">
+                        <span class="key">linkedin</span>=<span class="value">"linkedin.com/in/emiliomartíntorres"</span>
+                    </p>
+                    <p class="line">
+                        <span class="key">estado</span>=<span class="value">"Abierto a prácticas, primer empleo."</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <span>© <span id="year"></span> Emilio Martín Torres · emilio@portfolio:~$</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
